@@ -22,7 +22,6 @@ public class User implements Serializable{
 	
 	@DBRef(lazy = true) // Evita carregar todos os posts. Eles são carregados apenas se forem acessados.
 	List <Post> posts = new ArrayList<>();
-//	List <Comment> comments = new ArrayList<>();
 
 	public User(){}
 
